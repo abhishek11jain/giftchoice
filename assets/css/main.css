@@ -2475,7 +2475,7 @@ label {
 
 .page-header .breadcrumb span::before {
   content: "\f111";
-  font-family: 'Montserrat', sans-serif  !important;
+  font-family: "uicons-regular-straight"  !important;
   display: inline-block;
   font-size: 9px;
 }
@@ -4090,7 +4090,7 @@ table .product-thumbnail img {
   left: 10px;
   font-size: 12px;
   color: #088178;
-  font-family: 'Montserrat', sans-serif  !important;
+  font-family: "uicons-regular-straight"  !important;
   font-weight: 900;
 }
 
@@ -10111,6 +10111,26 @@ span.fi-rs-apps {
   animation-duration: 2s; /* don't forget to set a duration! */
 }
 
+.animate__bounceIn{
+  display: inline-block;
+  margin: 0 0.5rem;
+  transition: 0.3s ease-in-out;
+  animation: bounceIn infinite; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.animate__bounceIn:hover{
+  transition: 0.3s ease-in-out;
+  animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+}
+
+.animate__flash{
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  animation: flash infinite; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
 .image-1{
   height: 50ch;
   width: 100%;
@@ -10284,4 +10304,17 @@ h3.section-title {
     font-weight: normal;
     padding: 5px 10px 5px 10px;
 }
+}
+
+.btn-danger{
+  color: #fff !important;
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+.text-capitalize li{
+  margin: 2px;
+}
+.text-capitalize li a{
+  text-transform: capitalize !important;
 }
